@@ -1,0 +1,16 @@
+// colors
+$clr-primary: #ee6352;
+$clr-secondary: #d16e8d;
+$clr-accent: #F7F7FF;
+$clr-gradient: linear-gradient(-90deg, $clr-primary, $clr-secondary);
+
+// fonts
+$ff-title: bungee, sans-serif;
+$ff-body: canada-type-gibson,sans-serif;
+$fs-title: clamp(2rem, 6vw + 1rem, 6rem);
+$fs-subtitle: clamp(1.6rem, 3vw + 1rem, 2.6rem);
+$fs-body: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+$fw-body: 300;
+$fw-bold: 800;
+$fw-title: 400;
+$fw-number: 800;

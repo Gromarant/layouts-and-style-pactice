@@ -1,0 +1,38 @@
+@use './utils/varibles' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {  
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $ff-body;
+  font-weight: $fw-body;
+  min-width: 32rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: $clr-accent;
+}
+
+:focus {
+  outline: 5px solid $clr-accent;
+  outline-offset: 3px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}

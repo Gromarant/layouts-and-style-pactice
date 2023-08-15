@@ -1,0 +1,88 @@
+@use './utils/varibles' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {  
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $ff-body;
+  font-weight: $fw-body;
+  min-width: 32rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: $clr-accent;
+}
+
+:focus {
+  outline: 5px solid $clr-accent;
+  outline-offset: 3px;
+}
+
+.title {
+  font-size: $fs-title;
+  font-family: $ff-title;
+  font-weight: $fw-title;
+  color: white;
+  text-shadow: 3px 5px 10px rgba(0,0,0, .2);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 0 2em;
+  background: $clr-gradient;
+  position: relative;
+  z-index: 1000;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+
+.title span {
+  font-weight: $fw-number;
+  color: black;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 3.8em;
+  top: -30%;
+  z-index: -1;
+  opacity: .25;
+  max-width: 100vw;
+}
+
+.credicts {
+  font-family: $ff-title;
+  font-size: $fs-subtitle;
+}
+
+.descrip {
+  font-family: $ff-body;
+  font-size: $fs-body;
+  padding: 1.5rem 0;
+  color: rgba(black, .7);
+}
+
+.columns {
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2em;
+}
+
+@media (min-width: 500px) {
+  .columns {
+    grid-auto-flow: column;
+  }
+}
