@@ -15,7 +15,7 @@
 body {
   font-family: $ff-body;
   font-weight: $fw-body;
-  min-width: 32rem;
+  // min-width: 32rem; //this allow navBar to minimized with the all body
 }
 
 a {
@@ -34,5 +34,27 @@ a:focus {
 
 .nav {
   display: flex;
+  flex-wrap: wrap; // this allow navBar links to wrap down
+  justify-content: end;
   list-style: none;
+  padding: 1rem;
+  background-color: black;
+  gap: 1.4rem;
+}
+
+.nav > li {
+  color: aliceblue;
+  font-size: 1.4rem;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.columns > * {
+  flex: 1; //this property makes the columns de same size
+  background-color: aquamarine;
+  padding: 0.8rem; 
 }
