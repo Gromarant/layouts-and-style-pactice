@@ -32,6 +32,12 @@ a:focus {
   outline-offset: 3px;
 }
 
+h1 {
+  font-family: $ff-title;
+  font-size: $fs-title;
+  padding: 1.4rem;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap; // this allow navBar links to wrap down
@@ -41,7 +47,6 @@ a:focus {
   background-color: black;
   gap: 1.4rem;
 }
-
 .nav > li {
   color: aliceblue;
   font-size: 1.4rem;
@@ -52,9 +57,28 @@ a:focus {
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 .columns > * {
   flex: 1; //this property makes the columns de same size
   background-color: aquamarine;
+  font-family: $ff-body;
+  font-size: $fs-body;
   padding: 0.8rem; 
+}
+.columns > h2 {
+  font-family: $ff-title;
+  font-size: $fs-subtitle;
+}
+
+.numbers { //discomment the code to try it, every part have a nº identifier, equal to the identifier of the other parts of its group.
+  display: flex; //n2
+  flex-wrap: wrap; //n2
+  gap: 1rem;
+  margin-top: 1rem;
+  border: solid 0.8rem rgb(0, 0, 0);
+}
+.numbers > * {
+  //flex: 1; //n2
+  color: aliceblue;
+  background-color: blueviolet;
+  padding: 0.4rem 0.8rem;
 }
